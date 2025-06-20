@@ -16,7 +16,7 @@ for (
 	$keep_running = frankenphp_handle_request( $handler );
     gc_collect_cycles();
 
-	if (!$keep_running) {
+	if ( !$keep_running ) {
 		break;
 	}
 }
