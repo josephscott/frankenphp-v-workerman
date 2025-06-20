@@ -1,0 +1,13 @@
+{
+	auto_https off
+
+	frankenphp {
+		worker {
+			file frankenphp.php
+		}
+	}
+}
+
+localhost {
+	php_server
+}
