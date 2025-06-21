@@ -1,10 +1,9 @@
 <?php
 // From the https://frankenphp.dev/docs/worker/#custom-apps example
+// And https://github.com/php-runtime/runtime/blob/main/src/frankenphp-symfony/src/Runner.php
 ignore_user_abort( true );
 
-$handler = static function () {
-    echo "Hello World!\n";
-};
+$handler = static function () {};
 
 $max_requests = (int) ( $_SERVER['MAX_REQUESTS'] ?? 0 );
 
