@@ -5,6 +5,8 @@ use Workerman\Worker;
 use Workerman\Protocols\Http\Request;
 use Workerman\Protocols\Http\Response;
 
+Worker::$logFile = '/tmp/workerman.log';
+
 // Create HTTP server
 $http_worker = new Worker("http://0.0.0.0:4646");
 
